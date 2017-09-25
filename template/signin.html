@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+        
+    <!--Responsive Website-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+              
+    <!--(CDN) Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+    <!--(CDN) Import Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  </head>
+  <body class="fullbg">
+    <nav class="header" >
+      <div class="nav-wrapper">
+        <a class="brand-logo return" href="index.html"><span class="fa fa-angle-left"></span> MoreRecipes</a>
+        <a href="#" data-activates="navlink" class="button-collapse"><i class="material-icons">menu</i></a>         
+          <ul class="right hide-on-med-and-down return">
+              <a class="" href="signup.html">Sign Up</a>
+            </li>
+          </ul>
+          <ul class="side-nav" id="navlink">
+            <li class="">
+              <a class="" href="signup.html">Sign Up</a>
+            </li>
+          </ul>
+      </div>
+    </nav>
+    <div class="row center-align">
+      <div class="col s12 l6 m8 offset-l3 offset-m2">
+        <div class="card teal darken-1">
+          <div class="card-content white-text">
+            <h6>Sign in to enjoy more features now</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="form" class="container">
+      <div class="row">
+        <form class="col l6 m8 s12 offset-l3 offset-m2">
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="username" type="text" class="validate" required>
+            <label for="username">Username</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">lock_outline</i>
+            <input id="password" type="password" class="validate" required>
+            <label for="password">Password</label>
+          </div>
+        </div>
+        <div class="col s12 m12 l12 center-align">
+          <button class="btn waves-effect waves-light" type="submit" name="action">Login
+            <i class="material-icons right">send</i>
+          </button>
+        </div>
+      </form>
+      </div>
+    </div>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,13 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>More Recipes</title>
-    
-</head>
-<body>
-    <h1>Welcome to More Recipes</h1>
-</body>
+<html>
+  <head>
+      <meta charset="UTF-8">
+
+      <!--Responsive Website-->
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+      
+      <!--(CDN) Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+      <!--(CDN) Import Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  </head>
+
+  <body>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo center">More Recipe</a>
+                <ul class="left hide-on-med-and-down">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Recipes</a></li>
+                    <li><a href="#"></a></li>
+                    <form class="right">
+                            <div class="input-field">
+                                <input id="search" type="search" required>
+                                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                                <i class="material-icons">close</i>
+                            </div>
+                    </form>
+                </ul>
+
+                <ul class="right hide-on-med-and-down">
+                        <li class="">
+                          <a class="waves-effect waves-light btn navbtn modal-trigger" href="#modal-signin">Sign In</a>
+                        </li>
+                        <li class="">
+                          <a class="waves-effect waves-light btn navbtn modal-trigger" href="#modal-signup">Sign Up</a>
+                        </li>
+                      </ul>
+                
+            </div>
+        </nav>
+    <!--(CDN)Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!--(CDN) Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  
+  </body>
 </html>
