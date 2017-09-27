@@ -1,50 +1,134 @@
 <!DOCTYPE html>
 <html>
-  <head>
-      <meta charset="UTF-8">
 
-      <!--Responsive Website-->
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-      
-      <!--(CDN) Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<head>
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+	<link type="text/css" rel="stylesheet" href="css/custom.css" />
 
-      <!--(CDN) Import Compiled and minified CSS -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-  </head>
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
 
-  <body>
-        <nav>
-            <div class="nav-wrapper">
-                <a href="#!" class="brand-logo center">More Recipe</a>
-                <ul class="left hide-on-med-and-down">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Recipes</a></li>
-                    <li><a href="#"></a></li>
-                    <form class="right">
-                            <div class="input-field">
-                                <input id="search" type="search" required>
-                                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-                                <i class="material-icons">close</i>
-                            </div>
+<body class="bgcolor">
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo center hide-on-med-and-down">More Recipe</a>
+            <ul class="left hide-on-small-only">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Top Recipes</a></li>
+                <li><a href="#"></a></li>
+                <div class="nav-wrapper right">
+                    <form>
+                        <div class="input-field">
+                            <input id="search" type="search" required>
+                            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                            <i class="material-icons">close</i>
+                        </div>
                     </form>
-                </ul>
+                </div>
+            </ul>
+    
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a class="waves-effect waves-light btn navbtn teal modal-trigger" href="#signin">Sign In</a>
+                </li>
+                <li>
+                    <a class="waves-effect waves-light btn navbtn teal modal-trigger" href="#signup">Sign Up</a>
+                </li>
+            </ul>
+                    
+        </div>
+    </nav>
 
-                <ul class="right hide-on-med-and-down">
-                        <li class="">
-                          <a class="waves-effect waves-light btn navbtn modal-trigger" href="#modal-signin">Sign In</a>
-                        </li>
-                        <li class="">
-                          <a class="waves-effect waves-light btn navbtn modal-trigger" href="#modal-signup">Sign Up</a>
-                        </li>
-                      </ul>
-                
+	<flex id="top" class="row">
+		<div class="col s12 m8 offset-m2 ">
+			<h2 class="center-align">More Recipes Are Here</h2>
+			<p class="white-text"> Now That Your Tastes Have Grown Up, Do Something Different!
+                Join our platform now to Find and Share Delicious Recipes that fit your Lifestyle.
+            </p>
+            <p>You'll get what you wish for...What are you eating today?</p>
+            <div class="col s6 left-align">
+                <a class="waves-effect waves-light btn modal-trigger teal white-text" href="#signin">Sign In</a>
             </div>
-        </nav>
-    <!--(CDN)Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <!--(CDN) Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-  
-  </body>
+            <div class="col s6 right-align">
+                <a class="waves-effect waves-light btn modal-trigger teal white-text" href="#signup">Sign Up</a>
+            </div>
+
+		</div>
+    </flex>
+    
+    <div id="signin" class="modal">
+        <div class="modal-content red lighten-2">
+            <h4>Sign In</h4>
+            <div class="row">
+                <form class="col s12">
+                    <div class="row modal-form-row">
+                        <div class="input-field col s12 ">
+                            <i class="material-icons prefix">email</i>
+                            <input id="logemail" name="logemail" type="email" required="" aria-required="true">
+                            <label for="logemail" class="white-text">Email Address</label>
+                        </div>
+                        <div class="input-field col s12 ">
+                            <i class="material-icons prefix">lock_outline</i>
+                            <input id="logpassword" name="logpassword" type="password" required="" aria-required="true">
+                            <label for="logpassword" class="white-text">Password</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <a href="" class="black-text">Forgot Password?</a>
+                            <button class="modal-action modal-close waves-effect waves-black btn-flat black-text right">Cancel</button>
+                            <button class="btn waves-effect waves-light right teal" type="submit" name="action">Sign In</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+	<div id="signup" class="modal">
+		<div class="modal-content red lighten-2">
+			<h4>Sign up</h4>
+			<div class="row">
+				<form class="col s12 former" novalidate="novalidate">
+					<div class="row modal-form-row">
+						<div class="input-field col s12">
+                            <i class="material-icons prefix">account_circle</i>
+							<input id="username" name="username" type="text" required="please enter a username" aria-required="true">
+							<label for="username" class="white-text">Username</label>
+						</div>
+						<div class="input-field col s12 ">
+                            <i class="material-icons prefix">email</i>
+							<input id="email" name="email" type="email" required="please enter a valid email address" aria-required="true">
+							<label for="email" class="white-text">Email Address</label>
+						</div>
+						<div class="input-field col s12 ">
+                            <i class="material-icons prefix">lock_outline</i>
+							<input id="password" name="password" type="password" required="please enter a password" aria-required="true">
+							<label for="password" class="white-text">Password</label>
+						</div>
+						<div class="input-field col s12 ">
+                            <i class="material-icons prefix">lock_outline</i>
+							<input id="repassword" name="repassword" type="password" required="please re-enter password" aria-required="true">
+							<label for="repassword" class="white-text">Confirm Password</label>
+						</div>
+						<div class="input-field col s12">
+							<button class="modal-action modal-close waves-effect waves-black btn-flat black-text right">Cancel</button>
+							<button class="btn waves-effect waves-light teal right" type="submit" name="action">Sign Up</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+	<script type="text/javascript" src="js/materialize.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+</body>
+
 </html>

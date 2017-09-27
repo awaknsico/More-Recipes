@@ -1,0 +1,18 @@
+.modal {
+    max-height: 90%;
+}
+  
+.modal-form-row {
+    margin-bottom: 0px;
+}
+.bgcolor{
+    background-color: #ef9a9a
+}
+  
+flex {
+    flex: 1 0 auto;
+}
+  
+label {
+      width: 100%;
+  }  
