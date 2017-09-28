@@ -3,6 +3,7 @@ $(document).ready(function(){
     $('.modal').modal();
     $(".button-collapse").sideNav();
     $('.tooltipped').tooltip({delay: 500});
+    $('.parallax').parallax();
     $('.dropdown-button').dropdown({
         inDuration: 300,
         outDuration: 225,

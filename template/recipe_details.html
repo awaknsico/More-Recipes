@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/custom.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body class="bgcolor">
+    <header id="header">
+        <div class="navbar-fixed">
+            <ul id="dropdown1" class="dropdown-content">
+                <li><a href="profile.html" class="teal-text">Profile</a></li>
+                <li class="divider"></li>
+                <li><a href="index.html" class="teal-text">Sign Out</a></li>
+            </ul>
+            <nav class="red lighten-2">
+                <div class="nav-wrapper">
+                    <a href="recipes.html" class="brand-logo center white-text">More Recipe</a>
+                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons white-text">menu</i></a>
+                    <div class="left hide-on-med-and-down search-wrapper input-field">
+                        <input id="search" type="search" placeholder="Search">
+                        <i class="material-icons">close</i>
+                    </div>
+                    <ul id="navvy" class="right hide-on-med-and-down">
+                        <li><a href="#create" class="modal-trigger tooltipped" data-position="bottom" data-delay="100" data-tooltip="Add recipe"><i class="material-icons white teal-text">add</i></a></li>
+                        <li><a href="favorites.html" class="tooltipped" data-position="bottom" data-delay="100" data-tooltip="Favorites"><i class="material-icons white red-text">favorite</i></a></li>
+                        <li><a href="my_recipes.html" class="tooltipped" data-position="bottom" data-delay="100" data-tooltip="My Recipes"><i class="material-icons white teal-text">book</i></a></li>
+                        <li><a class="dropdown-button" href="profile.html" data-activates="dropdown1" data-beloworigin="true"><i class="material-icons white teal-text">account_circle</i></a></li>
+                    </ul>
+                    <ul class="side-nav" id="mobile-demo">
+                        <li>
+                            <input id="search" type="search" placeholder="Search" />
+                            <i class="material-icons">close</i>
+                        </li>
+                        <li><a href="">Create recipe<i class="material-icons">add</i></a></li>
+                        <li><a href="">Favourites<i class="material-icons">favorite</i></a></li>
+                        <li><a href="">My Profile<i class="material-icons">account_circle</i></a></li>
+                        <li><a href="">My Recipes<i class="material-icons">book</i></a></li>
+                        <li><a href="">Sign out<i class="material-icons">exit_to_app</i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="row">
+            <div class="col s12 m12">
+                <h4 class="header">Details</h4>
+                <div class="col s12 hide-on-large-only">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./images/recipeimg.jpg">
+                            <span class="card-title">Recipe Title</span>
+                            <a class="btn-floating halfway-fab waves-effect waves-light yellow"><i class="material-icons">favorite</i></a>
+                        </div>
+                        <div class="card-content">
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                                live the blind texts. Separated they live in...</p>
+                        </div>
+                        <div class="card-action">
+                            <a class="waves-effect waves-light btn-flat teal-text tooltipped" data-position="bottom" data-delay="100" data-tooltip="upvote"><i class="material-icons left">thumb_up</i>10</a>
+                            <a class="waves-effect waves-light btn-flat teal-text tooltipped" data-position="bottom" data-delay="100" data-tooltip="downvote"><i class="material-icons left">thumb_down</i>5</a>
+                            <a class="waves-effect waves-light btn-flat teal-text tooltipped" data-position="bottom" data-delay="100" data-tooltip="views"><i class="material-icons left">visibility</i>15</a>
+                            <div class="chip">
+                                <img src="./images/creator.png" alt="Creator"><b class="teal-text">AwakNsico</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card horizontal hide-on-med-and-down">
+                    <div class="card-image">
+                        <img src="./images/recipeimg.jpg">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <div class="row">
+                                <div class="col s6 m6">
+                                    <h4>Recipe Title</h4>
+                                </div>
+                                <div class="col s3 m3 offset-m3 offset-s3">
+                                    <a class="btn-floating top-fab waves-effect waves-light red lighten-2 tooltipped" data-position="bottom" data-delay="100"
+                                        data-tooltip="Add to Favorites"><i class="material-icons">favorite</i></a>
+                                </div>
+                            </div>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                                live the blind texts. Separated they live in...</p>
+                        </div>
+                        <div class="card-action">
+                            <a class="waves-effect waves-light btn-flat teal-text tooltipped" data-position="bottom" data-delay="100" data-tooltip="upvote"><i class="material-icons left">thumb_up</i>10</a>
+                            <a class="waves-effect waves-light btn-flat teal-text tooltipped" data-position="bottom" data-delay="100" data-tooltip="downvote"><i class="material-icons left">thumb_down</i>5</a>
+                            <a class="waves-effect waves-light btn-flat teal-text tooltipped" data-position="bottom" data-delay="100" data-tooltip="views"><i class="material-icons left">visibility</i>15</a>
+                            <div class="chip">
+                                <img src="./images/creator.png" alt="Creator"><b class="teal-text">AwakNsico</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m12">
+                    <div class="card darken-1">
+                        <div class="card-content">
+                            <span class="card-title">Ingredients</span>
+                            <hr></hr>
+                            <ul>
+                                <li> 1 1/2 pounds boneless, skinless chicken breasts, cut into 1-inch pieces</li>
+                                <li> 1 quart quart vegetable oil </li>
+                                <li> 1 tablespoon salt-free Cajun seasoning </li>
+                                <li> 1 teaspoon salt </li>
+                                <li> 1 cup all-purpose flour </li>
+                                <li> 8 pepperoncini peppers </li>
+                            </ul>
+                        </div>
+                        <div class="card-action">
+                            <i class="material-icons teal-text">access_time</i><b class="teal-text">25 Minutes</b>
+                            <i class="material-icons teal-text">local_dining</i><b class="teal-text">6 People</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12 m12">
+                    <div class="card darken-1">
+                        <div class="card-content">
+                            <span class="card-title">Directions</span>
+                            <hr></hr>
+                            <ol>
+                                <li>Toss chicken with 11/2 tsp of the Cajun seasoning and 1/2 tsp of the salt. In a large bowl,
+                                    whisk flour, beer and remaining 11/2 tsp Cajun seasoning and 1/2 tsp salt. Toss chicken
+                                    and peppers in batter and coat completely.</li>
+                                <li>In a Dutch oven, heat oil to 375 degrees. Working in 3 batches, drop chicken pieces and peppers
+                                    into oil, one piece at a time. Fry for 3 minutes, gently stirring halfway through cooking
+                                    time.
+                                </li>
+                                <li>With a slotted spoon, remove chicken and peppers from oil and place on a paper-towellined
+                                    baking sheet. Serve immediately with, if desired, cocktail sauce, ranch dressing and
+                                    lemon wedges.</li>
+                            </ol>
+                        </div>
+                        <div class="card-action">
+                            <i class="material-icons teal-text">access_time</i><b class="teal-text">25 Minutes</b>
+                            <i class="material-icons teal-text">local_dining</i><b class="teal-text">6 People</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m12">
+                    <h4 class="">Reviews</h4>
+                    <div class="row">
+                        <div class="col s12 m12">
+                            <ul class="collapsible" data-collapsible="accordion">
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">add</i>Post Your Review</div>
+                                    <div class="collapsible-body">
+                                        <div class="row">
+                                            <form class="col s12 white">
+                                                <div class="row">
+                                                    <div class="input-field col s12 m12">
+                                                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                                        <label for="textarea1">Review</label>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col s6 m6 offset-m4 offset-s4">
+                                                        <a class="modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+                                                        <a class="modal-action modal-close waves-effect waves-light teal btn">Save</a>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="card darken-1">
+                        <div class="card-content">
+                            <p>I really had fun trying out this recipe. Great taste and very easy to prepare. Nice one</p>
+                        </div>
+                        <div class="card-action">
+                            <div class="chip">
+                                <img src="./images/creator.png" alt="Contact Person"> Awak Nsico
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="card darken-1">
+                        <div class="card-content">
+                            <p>I had a lot of fun in the kitchen cooking, and my family enjoyed it. I'm definitely saving this
+                                recipe.
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <div class="chip">
+                                <img src="./images/creator.png" alt="Contact Person"> Awak Nsico
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div id="create" class="modal">
+                <div class="modal-content">
+                    <h4>Create Recipe</h4>
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="row modal-form-row">
+                                <div class="input-field col s12 ">
+                                    <input id="recipeTitle" name="recipeTitle" type="email" required="" aria-required="true">
+                                    <label for="recipeTitle">Recipe Title</label>
+                                </div>
+                                <div class="input-field col s12 ">
+                                    <textarea id="recipeDescription" class="materialize-textarea" name="recipeDescription" type="password" required="" aria-required="true"></textarea>
+                                    <label for="recipeDescription">Recipe Description</label>
+                                </div>
+                                <div class="input-field col s6 m6">
+                                    <input id="first_name" type="text" required="" aria-required="true">
+                                    <label for="first_name">Estimated Time</label>
+                                </div>
+                                <div class="input-field col s6 m6">
+                                    <input id="first_name" type="text" required="" aria-required="true">
+                                    <label for="first_name">Serves</label>
+                                </div>
+                                <div class="input-field col s12 m12">
+                                    <h6><b>Upload Image</b></h5>
+                                        <input class="waves-effect waves-light teal btn" type="file">
+                                </div>
+                                <div class="file-field input-field col s12 m12">
+                                    <h6><b>Ingredients</b></h6>
+                                    <small>Enter your Ingredients one at a time and hit enter</small>
+                                    <input id="first_name" placeholder="e.g 1 tsp dry pepper" type="text" required="" aria-required="true">
+                                </div>
+                                <div class="input-field col s12 m12">
+                                    <h6><b>Directions</b></h5>
+                                        <small>Enter your directions one step at a time and hit enter</small>
+                                        <textarea class="materialize-textarea" id="first_name" placeholder="e.g Place all ingredients in a blender" type="text" required=""
+                                            aria-required="true"></textarea>
+                                </div>
+                                <div class="input-field col s12">
+                                    <button class="modal-action modal-close waves-effect waves-yellow btn-flat right">Cancel</button>
+                                    <button class="btn waves-effect waves-light right teal" type="submit" name="action">Save</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+            <script type="text/javascript" src="js/materialize.js"></script>
+            <script type="text/javascript" src="js/custom.js"></script>
+</body>
+
+</html>
