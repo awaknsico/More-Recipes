@@ -1,3 +1,7 @@
+html {
+    font-family: GillSans, Calibri, Trebuchet, sans-serif;
+}
+
 .modal {
     max-height: 90%;
 }
@@ -16,6 +20,10 @@
     height: 100%;
 }
 
+.tall-text {
+    height: 200px;
+}
+
 .bgcolor{
     background-color: #ef9a9a
 }
@@ -26,4 +34,4 @@ flex {
   
 label {
       width: 100%;
-  }  
+}  
