@@ -34,4 +34,25 @@ flex {
   
 label {
       width: 100%;
-}  
+}
+
+.cardy {
+    width: 400px;
+}
+
+.cardy-content {
+    height: 100px;
+}
+
+.cardy-action {
+    height: 120px;
+}
+
+.card-header {
+    overflow: hidden;   
+    max-height: 200px;
+}
+
+.card-header img{
+    width: 100%;
+}
