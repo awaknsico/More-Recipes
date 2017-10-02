@@ -9,12 +9,6 @@ html {
 .modal-form-row {
     margin-bottom: 0px;
 }
-.bgimage{
-    background-color: #ef9a9a;
-    background-image: url('../images/homeimg.jpg');
-    max-width: 100%;
-    height:auto;
-}
 
 .parallax-container {
     height: 100%;

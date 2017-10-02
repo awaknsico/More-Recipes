@@ -1,0 +1,38 @@
+{
+  "name": "more-recipes",
+  "version": "1.0.0",
+  "description": "More Recipe App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel ./server/ -d ./dist",
+    "start": "nodemon ./server/dist/bin/www.js",
+    "start:dev": "nodemon --watch server/src --exec babel-node  -- server/src/bin/www.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/awaknsico/More-Recipes.git"
+  },
+  "author": "Awak Nsico",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/awaknsico/More-Recipes/issues"
+  },
+  "homepage": "https://github.com/awaknsico/More-Recipes#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.1"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-install": "2.1.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^4.8.0",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.12.1"
+  }
+}
