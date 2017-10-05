@@ -4,9 +4,9 @@ const controllers = require ('../controllers/index');
 const router = express.Router();
 
 // route for user sign up
-router.post('/api/users/signup', controllers.User.create);
+// router.post('/api/users/signup', controllers.User.create);
 // route for user sign in
-router.post('/api/users/signin', controllers.User.signin);
+// router.post('/api/users/signin', controllers.User.signin);
 
 // authentication middleware
 router.use((req, res, next) => {
@@ -20,16 +20,16 @@ router.use((req, res, next) => {
 });
 
 // route for add recipe
-router.post('/api/recipes', controllers.Recipe.add);
+// router.post('/api/recipes', controllers.Recipe.add);
 
-// route for get recipes
-router.get('/api/recipes', controllers.Recipe.fetch);
+// // route for get recipes
+// router.get('/api/recipes', controllers.Recipe.fetch);
 
-// route for update recipe
-router.put('/api/recipes/:recipeId', controllers.Recipe.update);
+// // route for update recipe
+// router.put('/api/recipes/:recipeId', controllers.Recipe.update);
 
-// route for delete recipe
-router.delete('/api/recipes/:recipeId', controllers.Recipe.destroy);
+// // route for delete recipe
+// router.delete('/api/recipes/:recipeId', controllers.Recipe.destroy);
 
 
 // route for logged in user sign out
