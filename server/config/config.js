@@ -2,7 +2,7 @@ require('dotenv').config();
 
 const env = process.env.NODE_ENV || 'development';
 const dialect = 'postgres';
-const url = `${process.env.DATABASE_URL}${process.env.NODE_ENV}`;
+const url = `postgresql://postgres:andela@127.0.0.1/more-recipes-test`;
 const devMode = env === ('development' || 'test');
 const config = {
   url,
