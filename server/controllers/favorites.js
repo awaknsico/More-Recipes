@@ -7,7 +7,7 @@ export default {
       .then((recipe) => {
         if (!recipe) {
           return res.status(404).json({
-            message: 'Recipe does not exists'
+            message: "Recipe doesn't exist"
           });
         }
         models.Favourite
@@ -18,7 +18,7 @@ export default {
           });
         return res.status(201).json({
           status: 'Success',
-          message: 'Recipe added to favourites successfully'
+          message: 'Recipe has been added to Favourites'
         });
       })
       .catch(error => res.status(400).send({
@@ -35,7 +35,7 @@ export default {
       .then((favourite) => {
         if (!favourite.length) {
           res.status(200).json({
-            message: 'Your list of favorite recipes is empty'
+            message: 'You have not yet Favourited any Recipe yet'
           });
         }
         res.status(200).json(favourite);
