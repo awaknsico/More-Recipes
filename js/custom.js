@@ -1,5 +1,6 @@
 $(document).ready(function(){
     // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.materialboxed').materialbox();
     $('.modal').modal();
     $(".button-collapse").sideNav();
     $('.tooltipped').tooltip({delay: 500});
@@ -12,10 +13,10 @@ $(document).ready(function(){
         alignment: 'right' // Displays dropdown with edge aligned to the left of button
       }
     );
-    
-    
+
+
  });
- 
+
  $.validator.setDefaults({
     errorClass: 'invalid',
     validClass: "valid",
@@ -32,6 +33,6 @@ $(document).ready(function(){
 
 $(".former").validate({
     rules: {
-       
+
     }
 });
