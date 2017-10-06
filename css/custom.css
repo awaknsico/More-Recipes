@@ -1,0 +1,56 @@
+html {
+    font-family: GillSans, Calibri, Trebuchet, sans-serif;
+}
+
+.opacity{
+  opacity: 0.4;
+}
+
+.modal {
+    max-height: 90%;
+}
+
+.modal-form-row {
+    margin-bottom: 0px;
+}
+
+.parallax-container {
+    height: 100%;
+}
+
+.tall-text {
+    height: 200px;
+}
+
+.bgcolor{
+    background-color: #ef9a9a
+}
+
+flex {
+    flex: 1 0 auto;
+}
+
+label {
+      width: 100%;
+}
+
+.cardy {
+    width: 400px;
+}
+
+.cardy-content {
+    height: 100px;
+}
+
+.cardy-action {
+    height: 120px;
+}
+
+.card-header {
+    overflow: hidden;
+    max-height: 200px;
+}
+
+.card-header img{
+    width: 100%;
+}
